@@ -1,0 +1,26 @@
+---
+  version: '3.5'
+
+  secrets:
+    tomcat_ssl_crt:
+      file: ./certificates/tomcat/tomcat-wildcard-dev.crt
+    tomcat_ssl_key:
+      file: ./certificates/tomcat/tomcat-wildcard-dev.key
+    aquarius_service_password:
+      file: ./secrets/aquariusPassword.txt
+
+  services:
+    aqcu-dv-hydro-report:
+      build: .
+      image: aqcu-dv-hydro-report-service
+      ports:
+        - "7502:7502"
+      secrets:
+        - source: tomcat_ssl_crt
+          target: /tomcat-wildcard-ssl.crt
+        - source: tomcat_ssl_key
+          target: /tomcat-wildcard-ssl.key
+        - source: aquarius_service_password
+          target: /aquariusPassword.txt
+      env_file:
+        - docker-compose.env
