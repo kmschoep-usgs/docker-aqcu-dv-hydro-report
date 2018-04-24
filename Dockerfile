@@ -19,6 +19,5 @@ ENV aquariusServiceUser=apinwisra
 ENV AQUARIUS_SERVICE_PASSWORD_PATH=/aquariusPassword.txt
 ENV simsBaseUrl=http://sims.water.usgs.gov/SIMS/StationInfo.aspx
 ENV waterdataBaseUrl=http://waterdata.usgs.gov/nwis/inventory/
-ENV nwisRaServerList=https://reporting.nwis.usgs.gov
-ENV nwisRaIsSecure=true
+ENV nwisRaServiceEndpoint=https://reporting.nwis.usgs.gov/service
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
