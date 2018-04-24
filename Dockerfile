@@ -14,9 +14,10 @@ RUN ["chmod", "+x", "launch-app.sh"]
 ENV serverPort=7502
 ENV javaToRServerList=https://reporting-services.nwis.usgs.gov:7500
 ENV aqcuReportsWebserviceUrl=http://reporting.nwis.usgs.gov/aqcu/timeseries-ws/
-ENV aquariusServiceEndpoint=http://tsqa.nwis.usgs.gov
+ENV aquariusServiceEndpoint=http://ts.nwis.usgs.gov
 ENV aquariusServiceUser=apinwisra
 ENV AQUARIUS_SERVICE_PASSWORD_PATH=/aquariusPassword.txt
 ENV simsBaseUrl=http://sims.water.usgs.gov/SIMS/StationInfo.aspx
 ENV waterdataBaseUrl=http://waterdata.usgs.gov/nwis/inventory/
+ENV nwisRaServiceEndpoint=https://reporting.nwis.usgs.gov/service
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
