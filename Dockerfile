@@ -12,6 +12,7 @@ RUN ["chmod", "+x", "launch-app.sh"]
 
 #Default ENV Values
 ENV serverPort=7502
+ENV maxHeapSpace=300M
 ENV javaToRServiceEndpoint=https://reporting-services.nwis.usgs.gov:7500/aqcu-java-to-r/
 ENV aqcuReportsWebserviceUrl=http://reporting.nwis.usgs.gov/aqcu/timeseries-ws/
 ENV aquariusServiceEndpoint=http://ts.nwis.usgs.gov
