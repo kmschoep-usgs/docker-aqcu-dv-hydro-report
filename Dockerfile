@@ -25,5 +25,5 @@ ENV simsBaseUrl=http://sims.water.usgs.gov/SIMS/StationInfo.aspx
 ENV waterdataBaseUrl=http://waterdata.usgs.gov/nwis/inventory/
 ENV nwisRaServiceEndpoint=https://reporting.nwis.usgs.gov/service
 ENV oauthResourceId=resource-id
-ENV oauthResourceTokenKeyUri=https://exmaple.gov/oauth/token_key
+ENV oauthResourceTokenKeyUri=https://example.gov/oauth/token_key
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
