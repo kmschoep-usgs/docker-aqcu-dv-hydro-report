@@ -1,4 +1,4 @@
-FROM cidasdpdasartip.cr.usgs.gov:8447/aqcu/aqcu-base:latest
+FROM cidasdpdasartip.cr.usgs.gov:8447/wma/wma-spring-boot-base:latest
 
 ENV repo_name=aqcu-maven-centralized
 ENV artifact_id=aqcu-dv-hydro-report
@@ -25,5 +25,5 @@ ENV simsBaseUrl=http://sims.water.usgs.gov/SIMS/StationInfo.aspx
 ENV waterdataBaseUrl=http://waterdata.usgs.gov/nwis/inventory/
 ENV nwisRaServiceEndpoint=https://reporting.nwis.usgs.gov/service
 ENV oauthResourceId=resource-id
-ENV oauthResourceTokenKeyUri=http://localhost/oauth/token_key
+ENV oauthResourceTokenKeyUri=https://example.gov/oauth/token_key
 ENV HEALTHY_RESPONSE_CONTAINS='{"status":{"code":"UP","description":""}'
