@@ -6,3 +6,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [UNRELEASED]
 ### Updated
 - drsteini@usgs.gov - Initial creation
+- use version 0.0.4 wma-spring-boot-base docker image from dockerhub
